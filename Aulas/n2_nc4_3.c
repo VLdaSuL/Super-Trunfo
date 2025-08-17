@@ -6,7 +6,7 @@
         float resultado = a + b;
         //'a' é convertido implicitamente para float
 
-        printf("Resultado: %.2f\n", resultado);
+        printf("\n\nResultado: %.2f\n", resultado);
 
     return 0;
 
