@@ -9,7 +9,7 @@
         int quociente = a / b;
         //Note que a divisão de inteiros resulta em um número inteito
 
-        printf("Soma: %d\n", soma);
+        printf("\n\nSoma: %d\n", soma);
         printf("Difenrença: %d\n", diferenca);
         printf("Produto: %d\n", produto);
         printf("Quociente: %d\n", quociente);
