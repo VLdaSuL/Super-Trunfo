@@ -3,7 +3,7 @@
     int main(){
 
         //Projeto faculdade
-        printf("\nProjeto Jogo Super Trunfo");
+        printf("\nProjeto Jogo Super Trunfo\n");
 
         //Entranda das variaveis
         int populacao1, populacao2, turistico1, turistico2;
@@ -53,7 +53,7 @@
         printf("\nCartas Cadastradas: \n");
 
         //Impressão primeira carta
-        printf("\nPrimeira carta: \n");
+        printf("\nCARTA 1\n");
         printf("Nome do Estado: %s\n", estado1);
         printf("Código da carta: %s\n", codigo1);
         printf("Nome da cidade: %s\n", cidade1);
@@ -63,7 +63,7 @@
         printf("Número de pontos turísticos: %d\n", turistico1);
 
         //Impressão segunda carta
-        printf("\nPrimeira carta: \n");
+        printf("\nCARTA 2\n");
         printf("Nome do Estado: %s\n", estado2);
         printf("Código da carta: %s\n", codigo2);
         printf("Nome da cidade: %s\n", cidade2);
