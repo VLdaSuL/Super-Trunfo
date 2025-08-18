@@ -56,8 +56,8 @@
         densidade2 = populacao2 / area2;
 
         //Calculando PIB per Capita
-        percapita1 = (float)(pib1 / populacao1);
-        percapita2 = (float)(pib2 / populacao2);
+        percapita1 = pib1 / (float) populacao1;
+        percapita2 = pib2 / (float) populacao2;
 
         //Cartas do jogo
         printf("\nCartas Cadastradas: \n");
