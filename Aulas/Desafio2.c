@@ -6,6 +6,7 @@
     soma = (nota1 + nota2 + nota3);
 
     //Entrada das notas
+    printf("DIGITE AS NOTAS: \n");
     printf("\n\nDigite a primeira nota: \n");
     scanf("%f", &nota1);
     printf("Digite a segunda nota: \n");
@@ -18,10 +19,10 @@
 
     //Imprimindo resultados
     printf("\n\nNOTAS: \n");
-    printf("Primeira nota: %.2f\n", nota1);
-    printf("Segunda nota: %.2f\n", nota2);
-    printf("Terceira nota: %.2f\n", nota3);
-    printf("Média final: %.2f\n", media);
+    printf("Primeira nota: %f\n", nota1);
+    printf("Segunda nota: %f\n", nota2);
+    printf("Terceira nota: %f\n", nota3);
+    printf("Média final: %f\n\n", media);
 
     return 0;
 
