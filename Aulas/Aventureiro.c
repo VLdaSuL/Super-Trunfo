@@ -7,7 +7,7 @@
 
         //Entranda das variaveis
         int turistico1, turistico2;
-        float populacao1, populacao2;
+        int populacao1, populacao2;
         float pib1, pib2, area1, area2;
         float densidade1, densidade2, percapita1, percapita2;
         char estado1[15], estado2[15], codigo1[5], codigo2[5]; 
@@ -56,8 +56,8 @@
         densidade2 = populacao2 / area2;
 
         //Calculando PIB per Capita
-        percapita1 = (pib1 / populacao1);
-        percapita2 = (pib2 / populacao2);
+        percapita1 = (float) (pib1 / populacao1);
+        percapita2 = (float) (pib2 / populacao2);
 
         //Cartas do jogo
         printf("\nCartas Cadastradas: \n");
@@ -67,7 +67,7 @@
         printf("Nome do Estado: %s\n", estado1);
         printf("Código da carta: %s\n", codigo1);
         printf("Nome da cidade: %s\n", cidade1);
-        printf("População: %f habitantes\n", populacao1);
+        printf("População: %d habitantes\n", populacao1);
         printf("Área: %.3f km²\n", area1);
         printf("PIB: %.2f de reais\n", pib1);
         printf("Número de pontos turísticos: %d\n", turistico1);
@@ -79,7 +79,7 @@
         printf("Nome do Estado: %s\n", estado2);
         printf("Código da carta: %s\n", codigo2);
         printf("Nome da cidade: %s\n", cidade2);
-        printf("População: %f habitantes\n", populacao2);
+        printf("População: %d habitantes\n", populacao2);
         printf("Área: %.3f km²\n", area2);
         printf("PIB: %.2f de reais\n", pib2);
         printf("Número de pontos turísticos: %d\n", turistico2);
