@@ -8,8 +8,10 @@
 
         printf("\n\nNúmero positivo grande: %lu\n", numeroGrandePositivo);
         printf("Número positivo: %u\n", numeroPositivo);
-        printf("Número grande: %ld", numeroGrande);
+        printf("Número grande: %ld\n", numeroGrande);
         printf("Número: %d\n", numero);
+
+        //Professor fez uma variação no long com long long int e tratou o erro.
 
     return 0;
 
