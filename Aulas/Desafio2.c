@@ -19,9 +19,9 @@
 
     //Imprimindo resultados
     printf("\n\nNOTAS: \n");
-    printf("Prova 1: %.2f\n", nota1);
-    printf("Prova 2: %.2f\n", nota2);
-    printf("Trabalhos: %.2f\n", nota3);
+    printf("Prova 1: %d\n", nota1);
+    printf("Prova 2: %d\n", nota2);
+    printf("Trabalhos: %d\n", nota3);
     printf("Média final: %.2f\n\n", media);
 
     return 0;
