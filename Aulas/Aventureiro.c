@@ -48,16 +48,16 @@
         scanf("%f", &area2);
         printf("Digite o PIB: \n");
         scanf("%f", &pib2);
-        printf("Digite o número de pontos túristicos: \n");
-        scanf("%d", &turistico2);
+        //printf("Digite o número de pontos túristicos: \n");
+        //scanf("%d", &turistico2);
 
         //Calculando densidade populacional
-        densidade1 = populacao1 / area1;
-        densidade2 = populacao2 / area2;
+        densidade1 = (float) populacao1 / area1;
+        densidade2 = (float) populacao2 / area2;
 
         //Calculando PIB per Capita
-        percapita1 = pib1 / populacao1;
-        percapita2 = pib2 / populacao2;
+        percapita1 = pib1 / (float) populacao1;
+        percapita2 = pib2 / (float) populacao2;
 
         //Cartas do jogo
         printf("\nCartas Cadastradas: \n");
@@ -88,4 +88,5 @@
 
 
         return 0;
+
     }
