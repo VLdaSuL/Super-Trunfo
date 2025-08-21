@@ -92,6 +92,7 @@
         printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
         printf("PIB per Capita: %.2f reais\n", percapita2);
 
+        /*
         //Comparando cartas 1 e 2;
         printf("\nBatalha das cartas:\n");
         printf("Resultado 1, Vitória Carta 1\n");
@@ -104,7 +105,59 @@
         printf("Densidade populacional - carta 1 x carta 2 - Resultado: %d\n", densidade1 < densidade2);         
         printf("PIB per Capita - carta 1 x carta 2 - Resultado: %d\n", percapita1 > percapita2);   
         printf("Super Poder - carta 1 x carta 2 - Resultado: %d\n\n\n", pib1 > pib2); 
+        */
 
+        printf("\n\nResultado do Combate das cartas:\n\n");
+
+        //Testando o poder população:
+        if (populacao1 > populacao2) {
+            printf("Poder população - Carta 1 venceu!!!\n");
+        } else {
+            printf("Poder população - Carta 2 venceu!!!\n");
+        }
+
+        //Testando o poder área em km²:
+        if (area1 > area2) {
+            printf("Poder área - Carta 1 venceu!!!\n");
+        } else {
+            printf("Poder área - Carta 2 venceu!!!\n");
+        }
+
+        //Testando o poder PIB:
+        if (pib1 > pib2) {
+            printf("Poder PIB - Carta 1 venceu!!!\n");
+        } else {
+            printf("Poder PIB - Carta 2 venceu!!!\n");
+        }
+
+        //Testando o poder Pontos Turísticos:
+        if (turistico1 > turistico2) {
+            printf("Poder pontos turísticos - Carta 1 venceu!!!\n");
+        } else {
+            printf("Poder pontos turísticos - Carta 2 venceu!!!\n");
+        }
+
+        //Testando o poder Densidade Populacional:
+        if (densidade1 < densidade2) {
+            printf("Poder densidade populacional - Carta 1 venceu!!!\n");
+        } else {
+            printf("Poder densidade populacional - Carta 2 venceu!!!\n");
+        }
+
+        //Testando o poder PIB per Capita:
+        if (percapita1 > percapita2) {
+            printf("Poder PIB per Capita - Carta 1 venceu!!!\n");
+        } else {
+            printf("Poder PIB per Capita - Carta 2 venceu!!!\n");
+        }
+
+         //Testando Super Poder:
+        if (super1 > super2) {
+            printf("\nSUPER PODER - Carta 1 venceu!!!\n\n\n");
+        } else {
+            printf("\nSUPER PODER - Carta 2 venceu!!!\n\n\n");
+        }       
+        
         return 0;
 
     }
