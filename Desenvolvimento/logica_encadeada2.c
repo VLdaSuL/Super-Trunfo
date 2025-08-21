@@ -8,10 +8,14 @@
         scanf("%d", &nota);
 
         if (nota <= 45) {
-            printf("Conceito E");
+            printf("\n\nConceito E\n\n");
         } else if (nota <= 59) {
-            printf("Conceito D");
+            printf("\n\nConceito D\n\n");
         } else if (nota <= 69) {
-            printf("Conceito")
+            printf("\n\nConceito C\n\n");
+        } else if (nota <= 89) {
+            printf("\n\nConceito B\n\n");
+        } else {
+            printf("\n\nConceito A\n\n");
         }
     }
