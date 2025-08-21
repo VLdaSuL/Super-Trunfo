@@ -2,19 +2,19 @@
 
 int main (){
     
-    int idade
+    int idade;
 
     printf("\n\nDigite a sua idade:\n");
-    scanf("%d", idade);
+    scanf("%d", &idade);
 
     if (idade > 60) {
-        printf("Você esta na melhor idade");
+        printf("\n\nVocê esta na melhor idade\n\n");
     } else if (idade < 60 && idade > 18) {
-        printf("Você é um adulto");
+        printf("\n\nVocê é um adulto\n\n");
     } else if (idade < 18 && idade > 12) {
-        printf("Você é um adolescente");
+        printf("\n\nVocê é um adolescente\n\n");
     } else {
-        printf("Você é um pirralho");
+        printf("\n\nVocê é um pirralho\n\n");
     }
 
 }
