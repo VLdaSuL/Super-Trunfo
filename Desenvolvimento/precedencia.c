@@ -19,16 +19,14 @@ video de instrução tema03 video2209
 
 */
 
-int a = 5;
-int b = -10;
-int c = 1;
+int a = -5;
+int b = 10;
+int c = 0;
 
 if (a > 0 && b < 0 || c == 0) {
-    printf("Todos os teste verdadeiros");
+    printf("\n\nTodos os teste verdadeiros\n\n");
 } else {
-    printf("Algo deu errado");
+    printf("\n\nAlgo deu errado\n\n");
 }
-
-
 
 }
