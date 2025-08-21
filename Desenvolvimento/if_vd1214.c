@@ -23,7 +23,7 @@
         */
         float temperatura;
 
-        temperatura = 9.00;
+        temperatura = 40.00;
 
         if (temperatura > 25.00) {
             printf("\n\nSim, temperatura esta ok\n\n");
