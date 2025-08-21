@@ -18,7 +18,19 @@
     scanf("%d", &dependentes);
 
     //Estrutura de filtragem:
-    if (idade < 18 || idade > 65) {}
+    if (idade >= 18 && idade <= 65) {
+        if (renda < 3000) {
+            if (dependentes > 2) {
+                printf("\n\nVocê têm direito ao benefício! \n\n");              
+            } else {
+                printf("Você não têm direito ao benfício, devido ao número de dependentes. \n\n");                
+            }
+        } else {
+            printf("\n\nVocê não tem direito ao benefício, devido a tua renda. \n\n");                        
+        }
+    } else {
+        printf("\n\nVocê não tem direito ao benefício, devido a tua idade. \n\n");
 
+    }
 
     }
