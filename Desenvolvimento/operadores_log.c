@@ -3,7 +3,7 @@
     int main (){
     
     int A, B;
-    A = 0;
+    A = -5;
     B = -1;
 
     /*
@@ -26,11 +26,21 @@
     */
 
     //Testando a logica Não !
+    /*
     if (!A == 0) {
         printf("\n\nA variável A é zero.\n\n");
     } else{
         printf("\n\nA variável A, não é zero.\n\n");
     }
+    */
+
+    if ((A > 0)) {
+        printf("\n\nA variável A é positiva\n\n");
+    } else {
+        printf("\n\nA variável A é negativa\n\n");
+    }
+
+
 
 }
 
