@@ -2,17 +2,43 @@
 
     int main() {
 
+    //Entranda das variaveis;
+    int turistico1, turistico2;
+    int populacao1, populacao2;
+    int opcao, regras;
+    float pib1, pib2, area1, area2;
+    double densidade1, densidade2, percapita1, percapita2;
+    double super1, super2;
+    char estado1[15], estado2[15], codigo1[5], codigo2[5]; 
+    char cidade1[15], cidade2[15];
+
+     printf("Escolha uma opção: \n");
+        printf("1. Verificar saldo: \n");
+        printf("2. Fazer depósito: \n");
+        printf("3. Fazer saque: \n");
+        scanf("%d", &opcao);
+
+    switch (opcao) {
+    case 1:
+            printf("Parte 1 \n");
+        break;
+    case 2:
+            printf("Parte 2: \n");
+        break;
+    case 3:
+            printf("parte3 \n");
+        break;
+        default:
+            printf("Opção inválida!");
+        break;
+            
+        }
+
+/*
         //Projeto faculdade;
         printf("\nProjeto Jogo Super Trunfo\n");
 
-        //Entranda das variaveis;
-        int turistico1, turistico2;
-        int populacao1, populacao2;
-        float pib1, pib2, area1, area2;
-        double densidade1, densidade2, percapita1, percapita2;
-        double super1, super2;
-        char estado1[15], estado2[15], codigo1[5], codigo2[5]; 
-        char cidade1[15], cidade2[15];
+
 
         //Cadastrando primeira carta;
         printf("Cadastrando primeira carta: \n");
@@ -91,4 +117,6 @@
         printf("Número de pontos turísticos: %d\n", turistico2);
         printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
         printf("PIB per Capita: %.2f reais\n", percapita2);
-    }
+*/
+
+}
