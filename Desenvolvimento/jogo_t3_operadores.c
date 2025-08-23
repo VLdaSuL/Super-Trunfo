@@ -20,10 +20,8 @@
         printf("Escolha a comparação: ");
         scanf("%c", &tipoComparacao);
 
-        //printf("Digite seu número (entre 1 e 100): ");
-       //scanf("%d", &numeroJogador);
-
-       numeroJogador = 50;
+        printf("Escolha um número: ");
+        scanf("%d", &numeroJogador);
 
         //Exibir número do computador
         //printf("O número do computador é: %d\n", numeroComputador);
@@ -36,7 +34,6 @@
             break;
 
             case 'N':
-            case 'n':
                 printf("Você escolheu a opção menor\n");
                 resultado = numeroJogador < numeroComputador ? 1 : 0;
              break;
@@ -52,7 +49,7 @@
             break;
         }
 
-        printf("O número do computador é: %d e o numero do jogador é: %d\n", numeroComputador, numeroJogador);        
+        printf("O número do jogador é: %d e o numero do Computador é: %d\n", numeroJogador, numeroComputador);        
 
         if (resultado == 1) {
             printf("Parabéns, você venceu!\n");
