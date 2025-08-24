@@ -1,14 +1,15 @@
-#include<stdio.h>
-    int main (){
-        int bispo = 1;
 
-        while (bispo <- 8) {
-            printf("%d\n", bispo);
-            bispo++;
+
+#include<stdio.h>
+
+
+    int main (){
+        int i = 1;
+
+        while (i <= 3) {
+            printf("%d\n", i);
+            printf("Cavalo\n");
+            i++;
         }
 
-
-
-return 0;
-
-    }
+}
