@@ -14,7 +14,7 @@
         printf("2. Movimentando o Bispo\n");
         printf("3. Movimentando a Rainha\n");
         printf("4. Movimentando a Torre\n");
-        printf("5. Movimentando o Cavalo\n")
+        printf("5. Movimentando o Cavalo\n");
         printf("6. Sair\n");
 
             printf("\n\nDigite uma opção:\n");
@@ -68,7 +68,7 @@
         int cavalo;
         int i = 1;
         printf("\n");
-        printf("\nMovimentando Cavalo:\n");
+        printf("\nEscolha um movimentos:\n");
         printf("1. Cima e Direita\n");
         printf("2. Direta e Cima\n");
         printf("3. Direta e Baixo\n");
