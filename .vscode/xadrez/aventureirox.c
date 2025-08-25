@@ -30,7 +30,8 @@
                 printf("Na opção 2, utilizado o loop While para mover o Bispo.\n");
                 printf("Na opção 3, a movimentação da rainha com Do While.\n");
                 printf("Na opção 4, a movimentação simples da Torre com o comando For.\n");
-                printf("Por fim a opção 5, sair da vizualização.\n\n\n");
+                printf("Na opção 5, Movimentando o Cavalo com looping aninhado Do While e For.\n");               
+                printf("Por fim a opção 6, sair da vizualização.\n\n\n");
             break;
             //Movimentação do Bispo utilizando o loop While
             case 2:
