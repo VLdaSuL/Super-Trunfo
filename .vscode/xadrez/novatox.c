@@ -36,7 +36,7 @@
                 printf("\n");
                 printf("Movimentando o Bispo.\n");
                 while (i <= 5) {
-                printf("Frente\n");
+                printf("Cima\n");
                 printf("Direita\n");
                 i++;
                 }  
@@ -57,7 +57,7 @@
                 printf("\n");
                 printf("Movimentando a Torre.\n");
                 for(i = 1; i <= 5; i++) {
-                printf("Frente\n");
+                printf("Cima\n");
                 }
                 printf("\n");
             break;
