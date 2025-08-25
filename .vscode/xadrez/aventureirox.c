@@ -2,9 +2,10 @@
     int main () {
 
         //Desafio:
-        //Bispo 5 casas na diagonal
-        //Rainha 8 casas para esquerda
-        //Torre 5 casas para frente
+        //Bispo 5 casas na diagonal com while
+        //Rainha 8 casas para esquerda com do while
+        //Torre 5 casas para frente com for
+        //Cavalo em oito direções com looping aninhado do while e for
 
         int numero, i, jogadas;
 
