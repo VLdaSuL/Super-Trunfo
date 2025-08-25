@@ -6,7 +6,7 @@
         int i = 1;
         do
         {
-            int = j;
+            int j;
             for (j = 1; j <= 3; j++)
             {
                 printf("Cima\n");
