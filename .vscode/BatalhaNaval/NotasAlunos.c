@@ -13,9 +13,9 @@
         printf("Para o aluno 1, digite 1\n"); 
         printf("Para o aluno 2, digite 2\n"); 
         
-        scanf("%d", &index);
+       // scanf("%d", &index);
 
-        printf("A nota do %s são: %s , %s...\n", nomesAlunos[index][0], nomesAlunos[index][1], nomesAlunos[index][2]);
+       // printf("A nota do %s são: %s , %s...\n", nomesAlunos[index][0], nomesAlunos[index][1], nomesAlunos[index][2]);
 
 
         return 0;

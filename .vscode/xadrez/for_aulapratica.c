@@ -5,18 +5,21 @@
         int i, j;
         char letra;
 
-        for (i = 1; i <= 5; i++)
+        for (i = 1; i <= 10; i++)
         {
  
             letra = 'A';
-            for (j = 1; j <= i; j++)
+            for (j = 0; j <= 10; j++)
             {
               printf("%c ", letra);
               ++letra;
             }
 
-            printf("\n");
-            
+
+
+
+
+
         }
 
     return 0;
