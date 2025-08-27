@@ -1,16 +1,34 @@
 #include <stdio.h>
 
+#define LINHA 10
+#define COLUNA 10
+
     int main(){
 
-        int matriz [3][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
-        int target = 5;
+        int matriz [LINHA][COLUNA]; // = {{1,2,3}, {4,5,6}, {7,8,9}}; //
+        int target = 45;
         int found = 0;
+        int soma = 1;
+
+        printf("\n\n");
+
+        for (int i = 0; i < LINHA; i++) {           //Loop externo de linhas
+            for (int j = 0; j < COLUNA; j++) {       //Loop interno de colunas
+
+                matriz[i][j] = soma;
+                soma++;
+                printf("%4d", matriz[i][j]);
+                }
+                printf("\n");
+                
+            }        
+
         // Busca condicional do elemento alvo
-        for (int i = 0; i < 3; i++) {           //Loop externo de linhas
-            for (int j = 0; j < 3; j++) {       //Loop interno de colunas
+        for (int i = 0; i < LINHA; i++) {           //Loop externo de linhas
+            for (int j = 0; j < COLUNA; j++) {       //Loop interno de colunas
 
                 if(matriz[i][j] == target) {
-                    printf("Elemento %d encontrado na petição (%d %d)\n", target, i, j);
+                    printf("O valor %d encontrado no indice (%d %d)\n", target, i, j);
                     found = 1;
                     break;
                 }
