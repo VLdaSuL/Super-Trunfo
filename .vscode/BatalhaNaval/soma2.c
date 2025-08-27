@@ -11,6 +11,7 @@
             for (int j = 0; j < 3; j++) {
                 matSoma[i][j] = mat1[i][j] + mat2[i][j];
                 
+                
                 printf("matSoma[%d][%d] =  %d\n", i, j, matSoma[i][j]);                
             }
             printf("\n");
