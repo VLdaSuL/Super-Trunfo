@@ -19,11 +19,14 @@
                 matT3[i][j] = matT1[i][j] + matT2[i][j];
                 
                 //printf("matT3[%d][%d] =  %d\n", i, j, matT3[i][j]); 
-                printf("mat1[%d][%d]", mat1[i][j]);               
+                //printf("mat1[%d][%d]", mat1[i][j]);
+                printf("%4d", matT3[i][j]);               
             }
             printf("\n");
+            //printf("%4d", mat1[i][j]);
+            
         }
-
+        
  /*       
         printf("%d\n", mat1[i][j]);
         printf("\n");

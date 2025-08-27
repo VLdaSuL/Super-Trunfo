@@ -7,9 +7,9 @@
         for (int i = 0; i < 3; i++) {           //Loop externo de linhas
             for (int j = 0; j < 3; j++) {       //Loop interno de colunas
 
-                if(matriz[i][j] > 5) {
+                if(matriz[i][j] %3 == 0) {
 
-                    matriz[i][j] = -matriz[i][j]; //Se o elemento for maior que 5, torna-o negativo
+                    matriz[i][j] = -1; //Substitui múltiplos de 3 por -1
 
                 }
                 printf("%4d", matriz[i][j]);
