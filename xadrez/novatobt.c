@@ -16,10 +16,10 @@
             ++letra;
         }   printf("\n");
 
-        for (int i = 0; i < 10; i++) 
+        for (int i = 1; i < 11; i++) 
         {
            
-            printf("%d", i);  //AJUSTE
+            printf("%2d", i);  //AJUSTE
             
             for (int j = 0; j < 10; j++)          
             {            
