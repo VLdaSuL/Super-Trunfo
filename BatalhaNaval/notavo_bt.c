@@ -9,11 +9,10 @@
         printf("TABULEIRO BATALHA NAVAL \n");
         printf("\n");
 
-        char letra ='A';
+        char letra[10] = {'A','B','C','D','E','F','G','H','I'};
         for (int l = 0; l < 10; l++) 
         {
-            printf (" %c", letra); 
-            ++letra;
+            printf (" %c", letra[l]); 
         }   printf("\n");
 
         for (int i = 0; i < 10; i++) 
