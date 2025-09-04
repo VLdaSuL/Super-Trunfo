@@ -58,17 +58,25 @@
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,6}, };  
 
-        int Matriz5[10][10] = {};
+        int Matriz5[10][10];
 
         
-        for (int i = 0; i < Linhas; i++) {
-            for (int j = 0; j < Colunas; j++) {
-                
-                printf("%d\t", Matriz3[i][j]);
-                
-            } printf("\n");
-        } printf("\n");  
+        for (int i = 0; i < Linhas; i++) {         
+            for (int j = 0; j < Colunas; j++) {              
+                Matriz5[i][j] = Matriz1[i][j] + Matriz2[i][j] + Matriz3[i][j];                                  
+            } 
+        } 
         
+       printf("\nMatriz 5: \n");
+
+        for (int l = 0; l < Linhas; l++) {
+            printf("\n");
+            for (int m = 0; m < Colunas; m++) {   
+                printf("%d ", Matriz5[l][m]);                                                 
+            } 
+        }         
+
+
     
    
 
