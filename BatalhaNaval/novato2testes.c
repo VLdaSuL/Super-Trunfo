@@ -1,11 +1,13 @@
 #include<stdio.h>
+#define Linhas 10
+#define Colunas 10
 
     int main(){
 
         int i, j;
 
         //Matriz0 - limpa
-        int Matriz0[10][10] = {         
+        int Matriz0[Linhas][Colunas] = {         
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
@@ -18,7 +20,7 @@
         {0,0,0,0,0,0,0,0,0,9}, };
 
         //Matriz1 - navios horizontais e verticais
-        int Matriz1[10][10] = {
+        int Matriz1[Linhas][Colunas] = {
         {0,0,0,0,0,0,0,0,3,0},
         {0,0,0,0,0,0,0,0,3,0},
         {0,0,0,0,0,0,0,0,3,0},
@@ -31,7 +33,7 @@
         {3,3,3,0,0,0,0,0,0,8}, };
         
         //Matriz2 - navios diagonais
-        int Matriz2[10][10] = {
+        int Matriz2[Linhas][Colunas] = {
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
@@ -44,7 +46,7 @@
         {0,0,0,0,0,0,0,0,0,7}, }; 
 
         //Matriz3 - peças especiais
-        int Matriz3[10][10] = {
+        int Matriz3[Linhas][Colunas] = {
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
@@ -55,15 +57,19 @@
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,6}, };  
-        
-        for (int i = 0, i < 10, i++){
-            for (int j = 0, j < 10; j++) {
-                Matriz5 = Matriz3 + Matriz2 + Matriz1 + Matriz0
-            }
-        }
-        
 
+        int Matriz5[10][10] = {};
 
+        
+        for (int i = 0; i < Linhas; i++) {
+            for (int j = 0; j < Colunas; j++) {
+                
+                printf("%d\t", Matriz3[i][j]);
+                
+            } printf("\n");
+        } printf("\n");  
+        
+    
    
 
     return 0;
