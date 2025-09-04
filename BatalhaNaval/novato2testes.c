@@ -72,9 +72,9 @@
         for (int l = 0; l < Linhas; l++) {
             printf("\n");
             for (int m = 0; m < Colunas; m++) {   
-                printf("%d ", Matriz5[l][m]);                                                 
+                printf("%d ", Matriz0[l][m]);                                                 
             } 
-        }         
+        }  printf("\n\n\n");       
 
 
     
