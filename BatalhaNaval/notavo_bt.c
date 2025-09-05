@@ -75,6 +75,8 @@
         char Linha [11] = {'X','A','B','C','D','E','F','G','H','I','J'};
 
         int Coluna [10] = {1,2,3,4,5,6,7,8,9,10};
+
+        int jogadas;
 /*
         //Teste das matrizes
         printf("\nMatriz: \n");
@@ -84,6 +86,32 @@
                 printf("%d ", Matriz0[n][o]); }}                                               
                 printf("\n\n\n");   
 */
+        printf("\n\n");
+        printf("Tabuleiros: \n");
+        printf("1. Instruções:\n");
+        printf("2. Navios verticais e horizontais:\n");
+        printf("3. Navios diagonais:\n");
+        printf("4. Peças especiais:\n");
+        printf("5. Todos navios\n");
+        printf("5. Todas as peças\n");
+        printf("7. Sair\n");
+
+            printf("\n\nDigite uma opção:\n");
+            scanf("%d", &jogadas);
+
+            switch (jogadas) 
+            {
+            //Entrando com as informações do movimento das peças    
+            case 1:
+                printf("\n");
+                printf("Movimentos de peças de xadrez.\n");
+                printf("Na opção 2, utilizado o loop While para mover o Bispo.\n");
+                printf("Na opção 3, movimento da Rainha com Do While.\n");
+                printf("Na opção 4, movimento da Torre com o comando For.\n");
+                printf("Na opção 5, movimentando o Cavalo com looping aninhado Do While e For.\n");               
+                printf("Na opção 6, saída da aplicação.\n\n\n");
+            break;
+            }
 
 
 
@@ -93,9 +121,7 @@
 
 
 
-
-
-
+/*
         printf("\n\n");
         printf("TABULEIRO BATALHA NAVAL \n");
         printf("\n");
@@ -114,6 +140,9 @@
                 printf (" %d", Matriz0[p][q]);
             }   printf("\n");  
         } printf("\n");      
+*/
+
+
 
     return 0;
 
