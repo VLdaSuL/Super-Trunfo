@@ -19,42 +19,42 @@
 
         //Matriz1 - navios horizontais e verticais
         int Matriz1[Linhas][Colunas] = {
+        {0,1,1,1,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,1},
+        {0,0,0,1,1,1,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0}, };
+        {0,0,0,0,2,0,0,0,0,0},
+        {0,0,0,0,2,0,0,0,0,0},
+        {0,0,0,0,2,0,0,0,0,0},
+        {0,0,0,0,0,0,0,0,2,0},
+        {0,0,0,0,0,0,0,0,2,0},
+        {0,0,0,0,0,0,0,0,2,0}, };
         
         //Matriz2 - navios diagonais
         int Matriz2[Linhas][Colunas] = {
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,2},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0}, }; 
-
-        //Matriz3 - peças especiais
-        int Matriz3[Linhas][Colunas] = {
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0},
+        {0,0,0,0,0,0,0,3,0,0},
+        {0,0,0,0,0,0,0,0,3,0},
         {0,0,0,0,0,0,0,0,0,3},
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0},
+        {0,0,3,0,0,0,0,0,0,0},
+        {0,3,0,0,0,0,0,0,0,0},
+        {3,0,0,0,0,0,0,0,0,0}, }; 
+
+        //Matriz3 - peças especiais cone, cruz e octaedro
+        int Matriz3[Linhas][Colunas] = {
         {0,0,0,0,0,0,0,0,0,0},
-        {0,0,0,0,0,0,0,0,0,0}, };      
+        {0,0,0,0,0,0,0,0,0,0},
+        {0,0,0,0,0,0,0,5,0,0},
+        {0,6,0,0,0,0,0,5,0,0},
+        {6,6,6,0,0,5,5,5,5,5},
+        {0,6,0,0,0,0,0,5,0,0},
+        {0,0,0,0,0,0,0,5,0,0},
+        {0,0,0,0,4,0,0,0,0,0},
+        {0,0,0,4,4,4,0,0,0,0},
+        {0,0,4,4,4,4,4,0,0,0}, };      
 
         //Matriz4 - Matriz1 + Matriz2  - Navios verticais, horizontais e diagonais  
         int Matriz4[Linhas][Colunas] = {};
@@ -77,72 +77,154 @@
         int Coluna [10] = {1,2,3,4,5,6,7,8,9,10};
 
         int jogadas;
-/*
-        //Teste das matrizes
-        printf("\nMatriz: \n");
-        for (int n = 0; n < Linhas; n++) {
-            printf("\n");
-            for (int o = 0; o < Colunas; o++) {   
-                printf("%d ", Matriz0[n][o]); }}                                               
-                printf("\n\n\n");   
-*/
+
         printf("\n\n");
         printf("Tabuleiros: \n");
         printf("1. Instruções:\n");
-        printf("2. Navios verticais e horizontais:\n");
-        printf("3. Navios diagonais:\n");
-        printf("4. Peças especiais:\n");
-        printf("5. Todos navios\n");
-        printf("5. Todas as peças\n");
-        printf("7. Sair\n");
+        printf("2. Tabuleiro vazio:\n");
+        printf("3. Navios verticais e horizontais:\n");
+        printf("4. Navios na diagonais:\n");
+        printf("5. Todos os navios:\n");
+        printf("6. Peças especiais no tabuleiro:\n");
+        printf("7. Todas as peças no tabuleiro:\n");
+        printf("8. Sair do Jogo.\n\n");
 
-            printf("\n\nDigite uma opção:\n");
+            printf("Digite uma opção:\n");
             scanf("%d", &jogadas);
 
             switch (jogadas) 
             {
             //Entrando com as informações do movimento das peças    
-            case 1:
+                case 1:
                 printf("\n");
-                printf("Movimentos de peças de xadrez.\n");
-                printf("Na opção 2, utilizado o loop While para mover o Bispo.\n");
-                printf("Na opção 3, movimento da Rainha com Do While.\n");
-                printf("Na opção 4, movimento da Torre com o comando For.\n");
-                printf("Na opção 5, movimentando o Cavalo com looping aninhado Do While e For.\n");               
-                printf("Na opção 6, saída da aplicação.\n\n\n");
-            break;
-            }
-
-
-
-
-
-
-
-
-
-/*
-        printf("\n\n");
-        printf("TABULEIRO BATALHA NAVAL \n");
-        printf("\n");
-        
-        //Indice horizontal
-        for (int p = 0; p <= 10; p++) {
-            printf ("%2c", Linha [p]); 
-        }   printf("\n");
-
-        for (int p = 0; p < 10; p++) {
+                printf("Leitura das peças no tabuleiro.\n");
+                printf("Opção 2, apresentação do tabuleiro vazio, onde o numero 0, representa a água.\n");
+                printf("Opção 3, numeros 1 para navios horizontais e 2 os navios na vertical.\n");
+                printf("Opção 4, numeros 3 simbolizando os navios da diagonal.\n");
+                printf("Opção 5, Tabuleiro com 6 navios, na horizontal, na vertical e na diagoanl.\n");
+                printf("Opção 6, Peças especiais, numeros 4 para cone, 5 para cruz e o 6 para o octaedro.\n");               
+                printf("Opção 7, Todas as 9 peças no tabuleiro.\n");
+                printf("Opção 8, Sair do Jogo.\n");
+                break;
+            //Tabuleiro vazio
+                case 2:
+                printf("\n\n");
+                printf("TABULEIRO BATALHA NAVAL \n");
+                printf("--- Tabuleiro vazio ---\n\n");       
+            //Indice horizontal
+                for (int p = 0; p <= 10; p++) {
+                    printf ("%2c", Linha [p]); 
+                }   printf("\n");
+                for (int p = 0; p < 10; p++) {
             //Indice vertical
-            printf("%2d", Coluna [p]);  
-            
-            for (int q = 0; q < 10; q++) { 
-                //Entrada Matriz           
-                printf (" %d", Matriz0[p][q]);
-            }   printf("\n");  
-        } printf("\n");      
-*/
-
-
+                    printf("%2d", Coluna [p]);              
+                    for (int q = 0; q < 10; q++) { 
+            //Entrada Matriz           
+                        printf (" %d", Matriz0[p][q]); 
+                    }   printf("\n");  
+                }       printf("\n");            
+                break;
+            //Tabuleiro com navios na vertical e horizontal
+                case 3:
+                printf("\n\n");
+                printf("TABULEIRO BATALHA NAVAL \n");
+                printf("Navios na vertical e na horizontal\n\n");       
+            //Indice horizontal
+                for (int p = 0; p <= 10; p++) {
+                    printf ("%2c", Linha [p]); 
+                }   printf("\n");
+                for (int p = 0; p < 10; p++) {
+            //Indice vertical
+                    printf("%2d", Coluna [p]);              
+                    for (int q = 0; q < 10; q++) { 
+            //Entrada Matriz           
+                        printf (" %d", Matriz1[p][q]); 
+                    }   printf("\n");  
+                }       printf("\n");            
+                break;
+            //Tabuleiro com navios na diagonal
+                case 4:
+                printf("\n\n");
+                printf("TABULEIRO BATALHA NAVAL \n");
+                printf("-- Navios na diagonal --\n\n");       
+            //Indice horizontal
+                for (int p = 0; p <= 10; p++) {
+                    printf ("%2c", Linha [p]); 
+                }   printf("\n");
+                for (int p = 0; p < 10; p++) {
+            //Indice vertical
+                    printf("%2d", Coluna [p]);              
+                    for (int q = 0; q < 10; q++) { 
+            //Entrada Matriz           
+                        printf (" %d", Matriz2[p][q]); 
+                    }   printf("\n");  
+                }       printf("\n");            
+                break;
+            //Tabuleiro com todos os navios
+                case 5:
+                printf("\n\n");
+                printf("TABULEIRO BATALHA NAVAL \n");
+                printf("--- Todos os navios ---\n\n");       
+            //Indice horizontal
+                for (int p = 0; p <= 10; p++) {
+                    printf ("%2c", Linha [p]); 
+                }   printf("\n");
+                for (int p = 0; p < 10; p++) {
+            //Indice vertical
+                    printf("%2d", Coluna [p]);              
+                    for (int q = 0; q < 10; q++) { 
+            //Entrada Matriz           
+                        printf (" %d", Matriz4[p][q]); 
+                    }   printf("\n");  
+                }       printf("\n");            
+                break; 
+            //Tabuleiro com peças especiais
+                case 6:
+                printf("\n\n");
+                printf("TABULEIRO BATALHA NAVAL \n");
+                printf("--- Peças especiais ---\n\n");       
+            //Indice horizontal
+                for (int p = 0; p <= 10; p++) {
+                    printf ("%2c", Linha [p]); 
+                }   printf("\n");
+                for (int p = 0; p < 10; p++) {
+            //Indice vertical
+                    printf("%2d", Coluna [p]);              
+                    for (int q = 0; q < 10; q++) { 
+            //Entrada Matriz           
+                        printf (" %d", Matriz3[p][q]); 
+                    }   printf("\n");  
+                }       printf("\n");            
+                break;  
+            //Tabuleiro com todas as peças
+                case 7:
+                printf("\n\n");
+                printf("TABULEIRO BATALHA NAVAL \n");
+                printf("--- Todas as peças ---\n\n");       
+            //Indice horizontal
+                for (int p = 0; p <= 10; p++) {
+                    printf ("%2c", Linha [p]); 
+                }   printf("\n");
+                for (int p = 0; p < 10; p++) {
+            //Indice vertical
+                    printf("%2d", Coluna [p]);              
+                    for (int q = 0; q < 10; q++) { 
+            //Entrada Matriz           
+                        printf (" %d", Matriz5[p][q]); 
+                    }   printf("\n");  
+                }       printf("\n");            
+                break;
+            //Sair do Jogo 
+                case 8:
+                    printf("\n\n");
+                    printf("Fim de Jogo!!!\n\n");
+                break;
+            //Opção invalida
+                default:
+                    printf("\n\n");
+                    printf("Opção inválida - Final de Jogo!!!\n\n");                  
+            }
+        printf("\n\n");
 
     return 0;
 
