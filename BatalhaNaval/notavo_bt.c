@@ -111,7 +111,7 @@
             
             for (int q = 0; q < 10; q++) { 
                 //Entrada Matriz           
-                printf (" %d", Matriz4[p][q]);
+                printf (" %d", Matriz0[p][q]);
             }   printf("\n");  
         } printf("\n");      
 
